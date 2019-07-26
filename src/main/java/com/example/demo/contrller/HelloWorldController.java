@@ -9,8 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloWorldController {
-	@RequestMapping("/hello")
+	
+	@RequestMapping("/")
 	public String index() {
+		return "Congratulation! SpringBoot start Successfully!";
+	}
+	@RequestMapping("/hello")
+	public String hello() {
 		return "Hello World";
 	}
 
