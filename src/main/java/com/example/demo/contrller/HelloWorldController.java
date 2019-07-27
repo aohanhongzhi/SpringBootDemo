@@ -26,5 +26,9 @@ public class HelloWorldController {
 		hashMap.put("result", "ok");
 		return hashMap;
 	}
+	@RequestMapping("/error1")
+	public String error() {
+		return "SpringBoot Error!";
+	}
 
 }
